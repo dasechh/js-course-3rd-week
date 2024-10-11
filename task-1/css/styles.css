@@ -1,0 +1,74 @@
+html,
+body {
+  font-family: "Fredoka", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+main {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  align-items: center;
+  border-radius: 1em;
+  border: solid 0.125em black;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0.5em;
+  color: #333;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+p {
+  margin: 0.3em;
+  color: #444;
+}
+
+button {
+  margin: 0.5em;
+  background-color: white;
+  border: 0.125em solid black;
+  border-radius: 0.5em;
+  padding: 0.625em 1.25em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+input {
+  margin: 0.5em;
+  font-size: 1rem;
+  border: 0.125em solid black;
+  padding: 0.625em 1.25em;
+  border-radius: 0.3em;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+.p-element {
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}

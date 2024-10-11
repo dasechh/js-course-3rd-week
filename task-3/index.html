@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-3</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Рассчет средней температуры для каждого датчика</h1>
+      <label for="sortType">Сортировать по:</label>
+      <select name="sortType" id="sortType">
+        <option value="ascendingById">возрастанию id</option>
+        <option value="ascendingByAverageTemp">
+          возрастанию средней температуры
+        </option>
+      </select>
+      <label for="text">Введите показания:</label>
+      <textarea name="text" id="text" maxlength="512"></textarea>
+      <button type="submit" id="button">Рассчитать!</button>
+      <p id="result"></p>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

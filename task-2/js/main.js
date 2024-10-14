@@ -4,7 +4,7 @@ const main = () => {
   let probabilities = getProbabilities(characters);
   return (document.getElementById(
     "result"
-  ).innerHTML = `Энтропия по Шеннону: ${calculateEntropy(probabilities)}`);
+  ).innerHTML = `Энтропия по Шеннону: ${calculateEntropy(probabilities).toFixed(2)}`);
 };
 
 const calculateEntropy = (probabilities) => {
@@ -14,7 +14,7 @@ const calculateEntropy = (probabilities) => {
       entropy -= p * Math.log2(p);
     }
   });
-  return entropy.toFixed(2);
+  return entropy;
 };
 
 const getProbabilities = (characters) => {

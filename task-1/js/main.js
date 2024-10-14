@@ -1,8 +1,8 @@
-const count = (original, strings) => {
+const count = (searchString, strings) => {
   let substrings = strings.split("\n");
   let occurrences = 0;
   substrings.forEach((substring) => {
-    if (substring.includes(original)) {
+    if (substring.includes(searchString)) {
       occurrences++;
     }
   });
@@ -10,11 +10,11 @@ const count = (original, strings) => {
 };
 
 const main = () => {
-  let original = document.getElementById("original").value;
+  let searchString = document.getElementById("searchString").value;
   let strings = document.getElementById("strings").value;
   let result = document.getElementById("result");
   return (result.innerHTML = `Количество строк, содержащих искомую строку: ${count(
-    original,
+    searchString,
     strings
   )}`);
 };
